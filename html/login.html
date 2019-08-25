@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/clear.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/verificationNumbers.js"></script>
+    <script src="../base/layer-v3.1.1/layer/layer.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/login.js"></script>
+    <title>党校在线考试登录</title>
+</head>
+<body>
+<div class="lg-bgDiv">
+</div>
+<div class="lg-redDiv">
+</div>
+<div class="lg-form fontYahei">
+    <div class="lg-title">
+        <p>杭州电子科技大学</p>
+        <p>网上党校在线考试系统</p>
+    </div>
+    <div class="form-group lg-nameDiv">
+        <input class="form-control userPhone" placeholder="学号"
+               type="text" autofocus="">
+    </div>
+    <div class="form-group lg-passDiv">
+        <input class="form-control userPass" placeholder="密码"
+               name="code" type="password" value="">
+    </div>
+    <div class="form-group clearfix lg-codeBox">
+        <div class="col-md-8" style="padding: 0">
+            <input class="form-control" id="J_codetext" placeholder="验证码"
+                   type="text" value="">
+        </div>
+        <div class="col-md-4 text-right" style="padding: 0">
+            <canvas class="J_codeimg fr" id="myCanvas"
+                    onclick="createCode()">
+                对不起，您的浏览器不支持canvas，请下载最新版浏览器!
+            </canvas>
+        </div>
+    </div>
+    <div class="lg-rememDiv clearfix">
+        <a class="fr colorA" href="forgetPass.html" >忘记密码？</a>
+    </div>
+    <div class="lg-loginDiv text-center">
+        <button class=" lg-btn" onclick="login(this)">登录</button>
+        <p class="lg-registBox">还没有账号？<a href="register.html" class="colorA colorRedA">立即注册</a></p>
+    </div>
+</div>
+</body>
+</html>

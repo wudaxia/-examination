@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/clear.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/verificationNumbers.js"></script>
+    <script src="../base/layer-v3.1.1/layer/layer.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/register.js"></script>
+    <title>党校在线考试注册</title>
+</head>
+<body>
+<div class="lg-bgDiv">
+</div>
+<div class="lg-redDiv">
+</div>
+<div class="lg-regform">
+    <div class="text-center">
+        <p class="rg-title">学员注册</p>
+        <p class="rg-titleWarn">（所有项目为必填，请保证资料的真实，否则考试成绩无效。）</p>
+    </div>
+    <div class="rg-Info row">
+        <div class="col-xs-6">
+            <div class="rg-infoDiv clearfix">
+                <p class="rg-infoT fl">姓名：</p>
+                <input class="form-control fl rg-name" placeholder="请输入姓名" style="width: 250px">
+            </div>
+
+
+
+            <div class="rg-infoDiv clearfix">
+                <p class="rg-infoT fl">密码：</p>
+                <input class="form-control fl rg-pass" type="password" placeholder="请输入密码" style="width: 250px">
+            </div>
+
+            <div class="rg-infoDiv clearfix">
+                <p class="rg-infoT fl">确认密码：</p>
+                <input class="form-control fl rg-confirmPass" type="password" placeholder="请输入密码" style="width: 250px">
+            </div>
+
+
+
+            <div class="rg-infoDiv clearfix">
+                <p class="rg-infoT fl">所属学院：</p>
+                <select class="form-control fl rg-xueyuan" style="width: 250px">
+                    <option value="1" selected>信息工程学院</option>
+                    <option value="2">人文学院</option>
+                    <option value="3">艺术与传媒</option>
+                    <option value="4">经贸学院</option>
+                </select>
+            </div>
+
+            <div class="rg-infoDiv clearfix">
+                <p class="rg-infoT fl">身份证号码：</p>
+                <input class="form-control fl rg-idcard" placeholder="身份证号码" style="width: 250px">
+            </div>
+
+
+        </div>
+
+        <div class="col-xs-6">
+            <div class="rg-infoDiv clearfix">
+                <p class="rg-infoT fl">学（工）号：</p>
+                <input class="form-control fl rg-xuehao" placeholder="请输入学（工）号" style="width: 250px">
+            </div>
+
+            <div class="rg-infoDiv clearfix sex">
+                <p class="rg-infoT fl">性别：</p>
+                <input class="form-control fl" type="radio" name="sex" checked ><span class="fl">男</span>
+                <input class="form-control fl" type="radio" name="sex"><span class="fl">女</span>
+            </div>
+
+            <div class="rg-infoDiv clearfix">
+                <p class="rg-infoT fl">身份：</p>
+                <input class="form-control fl" type="radio" name="statu" checked><span class="fl">学生</span>
+                <input class="form-control fl" type="radio" name="statu"><span class="fl">研究生</span>
+                <input class="form-control fl" type="radio" name="statu"><span class="fl">教职工</span>
+            </div>
+            <div class="rg-infoDiv clearfix">
+                <p class="rg-infoT fl">电子邮箱：</p>
+                <input class="form-control fl rg-email" placeholder="电子邮箱" style="width: 250px">
+            </div>
+
+            <div class="form-group clearfix rg-infoDiv">
+                <p class="rg-infoT fl">验证码：</p>
+                <input class="form-control fl" id="J_codetext" placeholder="验证码"
+                       type="text" value="" style="width: 150px">
+                <canvas class="J_codeimg fl" id="myCanvas"
+                        onclick="createCode()">
+                    对不起，您的浏览器不支持canvas，请下载最新版浏览器!
+                </canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center fontYahei">
+        <button class="lg-btn" onclick="regist(this)">立即注册</button>
+        <button class="lg-cancelbtn" onclick="cancelVal(this)">重置</button>
+        <p>已有账号，去<a class="colorRedA cursorP colorA" href="login.html">登录</a></p>
+    </div>
+</div>
+</body>
+</html>

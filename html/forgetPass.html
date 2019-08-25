@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/clear.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/verificationNumbers.js"></script>
+    <script src="../base/layer-v3.1.1/layer/layer.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/forgetPass.js"></script>
+    <title>忘记密码</title>
+</head>
+<body>
+<div class="lg-bgDiv">
+</div>
+<div class="lg-redDiv">
+</div>
+<div class="lg-form fontYahei">
+    <div class="fg-title">
+        <p>忘记密码</p>
+    </div>
+    <div class="fg-infoDiv clearfix">
+        <p class="fg-infoT fl">姓名：</p>
+        <input class="form-control fl fp-name" placeholder="请输入姓名" style="width: 300px">
+    </div>
+    <div class="fg-infoDiv clearfix">
+        <p class="fg-infoT fl">学（工）号：</p>
+        <input class="form-control fl fp-num" placeholder="学（工）号" style="width: 300px">
+    </div>
+    <div class="fg-infoDiv clearfix">
+        <p class="fg-infoT fl">邮箱：</p>
+        <input class="form-control fl fp-email" placeholder="邮箱" style="width: 300px">
+    </div>
+    <div class=" fg-warnDiv clearfix">
+        <span class="fr" >密码和账号将发至此邮箱，请正确填写!</span>
+    </div>
+    <div class="form-group clearfix fg-infoDiv">
+        <p class="fg-infoT fl">验证码：</p>
+        <input class="form-control fl" id="J_codetext" placeholder="验证码" type="text" value="" style="width: 200px">
+        <canvas class="J_codeimg fl" id="myCanvas" onclick="createCode()">
+            对不起，您的浏览器不支持canvas，请下载最新版浏览器!
+        </canvas>
+    </div>
+    <div class="text-center fontYahei">
+        <button class="lg-btn" onclick="confirm(this)">提交</button>
+        <button class="lg-cancelbtn" onclick="reset(this)">重置</button>
+        <p>已有账号，去<a class="colorRedA cursorP colorA" href="login.html">登录</a></p>
+    </div>
+</div>
+</body>
+</html>
